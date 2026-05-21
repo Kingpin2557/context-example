@@ -1,13 +1,11 @@
+import { useContext } from "react";
 import "./button.css";
+import { CountContext } from "../../contexts/CountContext";
 
-type ButtonType = {
-  count: number;
-  onClick: () => void;
-};
-
-function Button({ count, onClick }: ButtonType) {
+function Button() {
+  const { count, addCount } = useContext(CountContext);
   return (
-    <button className="counter" onClick={onClick}>
+    <button className="counter" onClick={() => addCount()}>
       {count}
     </button>
   );

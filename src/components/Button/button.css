@@ -10,6 +10,7 @@
 
     width: fit-content;
 
+    cursor: pointer;
     &:hover {
         border-color: var(--accent-border);
     }
