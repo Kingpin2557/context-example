@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="container">
       <h1>Vite + React</h1>
-      <Button addCount={() => addCount(count)} count={count} />
+      <Button onClick={() => addCount(count)} count={count} />
     </div>
   );
 }

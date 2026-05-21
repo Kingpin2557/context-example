@@ -2,12 +2,12 @@ import "./button.css";
 
 type ButtonType = {
   count: number;
-  addCount: () => void;
+  onClick: () => void;
 };
 
-function Button({ count, addCount }: ButtonType) {
+function Button({ count, onClick }: ButtonType) {
   return (
-    <button className="counter" onClick={addCount}>
+    <button className="counter" onClick={onClick}>
       {count}
     </button>
   );
